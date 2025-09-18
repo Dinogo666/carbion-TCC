@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de login</title>
+    <title>Página de registro</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="/styles/login-register.css">
 </head>
@@ -11,13 +11,27 @@
 
     <div class="wrapper">
         <form action="">
-            <h1>Login</h1>
+            <div class="logo">
+                <img>*Carbion Logo*</img>
+                <h1>Carbion</h1>
+                <!--display flex row os dois coladinhos-->
+            </div>
+            <p>Registre-se para continuar<p/>
             <div class="input-box">
-                <input class="input" type="text" placeholder="Username or email" required>
+                <input class="input" type="text" pattern="^\d{2}\.\d{3}\.\d{3}/\d{4}-\d{2}$"placeholder="CNPJ" required> <!-- fazer verificação de cnpj -->
+                <i class='bx bx-user'></i>
+            </div>
+
+            <div class="input-box">
+                <input class="input" type="email" placeholder="Email" required>
                 <i class='bx bx-user'></i>
             </div>
             <div class="input-box">
-                <input class="input" type="password" placeholder="Password" required>
+                <input class="input" type="email" placeholder="Confirme seu Email" required>
+                <i class='bx bx-user'></i>
+            </div>
+            <div class="input-box">
+                <input class="input" type="password" placeholder="Senha" required>
                 <i class='bx bxs-lock-alt'></i>
             </div>
             <div class="remember-forgot">
@@ -26,7 +40,7 @@
             </div>
             <button type="submit" class="btn">Login</button>
             <div class="register-link">
-                <p>Don't have an account? <a href="#">Register</a></p>
+                <p>Já possui uma conta ? <a href="/Pages/login.html">Login</a></p>
             </div>
         </form>
     </div>

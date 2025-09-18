@@ -8,12 +8,26 @@
     <link rel="stylesheet" href="/styles/login-register.css">
 </head>
 <body>
-
+    <header>
+        <img>*Carbion Logo*</img>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="/Pages/login.html">Login</a></li>
+            </ul>
+        </nav>
+        <button class="btn" >login</button>
+        <button class="btn">Sign Up</button>
+    </header>
+    
     <div class="wrapper">
         <form action="">
             <h1>Login</h1>
             <div class="input-box">
-                <input class="input" type="text" placeholder="Username or email" required>
+                <input class="input" type="text" pattern="^\d{2}\.\d{3}\.\d{3}/\d{4}-\d{2}$"placeholder="CNPJ" required> <!-- fazer verificação de cnpj -->
                 <i class='bx bx-user'></i>
             </div>
             <div class="input-box">
@@ -26,7 +40,7 @@
             </div>
             <button type="submit" class="btn">Login</button>
             <div class="register-link">
-                <p>Don't have an account? <a href="#">Register</a></p>
+                <p>Não tem uma conta ? <a href="/Pages/register.html">registre-se</a></p>
             </div>
         </form>
     </div>
