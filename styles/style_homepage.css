@@ -49,22 +49,17 @@ transform-origin: left;
 }
 
 
-.botaoLogin{
-
-padding: 17% 90% 17% 90%;
-background: transparent;
-}
-
-
 header input[type="button"] {
-    font-family: "Montserrat", sans-serif;   
-    border-radius: 5px;
-    font-size: 105%;
+  background: transparent;
+  padding: 17% 90% 17% 90%;
+  font-family: "Montserrat", sans-serif;   
+  font-size: 105%;
   font-weight: 250;    
-  margin-left: -180%;
   border: 0.5px solid #000;
+  border-radius: 5px;
   cursor: pointer;
   transition: .4s ease;
+  margin-left: -180%;
 }
 
 
@@ -74,3 +69,42 @@ header input[type="button"]:hover {
   background-color: #191013;
   transition: .4s ease;
 }
+
+.sec1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.title{
+  font-size: 1000%;
+  font-weight: 200;
+  margin-bottom: 3%;
+  margin-top: 8%;
+}
+.botoes{
+  display: flex;
+  gap: 20%;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5%;
+}
+.botoes input[type="button"]{
+
+  font-family: "Montserrat", sans-serif;   
+  font-weight: 500;
+  padding: 3% 30% 3% 30%;
+  border-radius: 7px;
+  border: none;
+  font-size: 130%;
+  cursor: pointer;
+}
+.saibaMais{
+  background-color: #11644D;
+  color: #B6C474;
+}
+.servicos{
+  background-color: #191013;
+  color: #FFF9CD;
+}
+
