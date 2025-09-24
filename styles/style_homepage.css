@@ -108,3 +108,13 @@ header input[type="button"]:hover {
   color: #FFF9CD;
 }
 
+
+.section_divisor{
+  width:80%;
+  text-align:center;
+}
+.mini_line_divisor{
+  width:100%;
+  text-align:center;
+}
+
